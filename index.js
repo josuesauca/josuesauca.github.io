@@ -28,6 +28,7 @@ function verificarTexto() {
 function validarMinusculas(input) {
     var texto = input.value;
     var soloMinusculas = /^[a-z\s]*$/; // Expresión regular para permitir solo letras minúsculas.
+    verificarTexto();
     if (!soloMinusculas.test(texto)) { 
         input.value = texto.replace(/[^a-z\s]/g, '');
         alert("Por favor, ingresa solo letras minúsculas");
