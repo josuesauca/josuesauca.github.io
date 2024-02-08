@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
+    <title>Challenge ONE</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="column">
+            <div>
+                <textarea oninput="validarMinusculas(this)" style="width: 400px; height: 400px;"  id="texto"  placeholder="Ingrese un texto" ></textarea>
+            </div>
+            <div class="buttons" style="display: flex; flex-direction: column;">
+                <p style="margin-bottom: 10px; margin-top: 0; font-size: 16px; margin-left: 5px;">Solo letras minúsculas y sin acento </p>
+                <div style="display: flex;">
+                    <button onclick="encriptar()"
+                        style="margin-right: 10px; background-color: purple;">Encriptar</button>
+                    <button onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </div>
+        </div>
+        <div class="column" style="flex: 40%;">
+            <div id="contenedorTexto">
+                <textarea id="resultado" style="width: 400px; height: 400px;" readonly></textarea>
+            </div>
+            <div class="buttons" id="botonCopiar">
+                <button onclick="copiar()">Copiar</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
